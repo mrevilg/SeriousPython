@@ -1,4 +1,5 @@
 # This is a number guess game
+# It is a good example of str/int concatenation
 
 import random
 
@@ -19,7 +20,7 @@ for guessesTaken in range(6):
         print('Your guess is too low.')
 
     if guess > number:
-        print('Your number id too high.')
+        print('Your number is too high.')
 
     if guess == number:
         break
