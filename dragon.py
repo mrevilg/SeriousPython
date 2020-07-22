@@ -9,3 +9,8 @@ is greeedy and hungry, and will eat you on sight.''')
 
 def chooseCave():
     cave = ''
+    while cave != '1' and cave !='2':
+        print('Which cave will you go into? (1 or 2)')
+        cave = input()
+
+    return cave
