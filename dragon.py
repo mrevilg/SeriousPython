@@ -14,3 +14,7 @@ def chooseCave():
         cave = input()
 
     return cave
+
+def checkCave(chooseCave):
+    print('Tou approach the cave...')
+    time.sleep(2)
