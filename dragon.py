@@ -23,3 +23,5 @@ def checkCave(chooseCave):
     print('A large dragon jumps out in front of you, he opens his jaws and...')
     print()
     time.sleep(2)
+
+    friendlyCave = random.randint(1, 2)
