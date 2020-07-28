@@ -37,6 +37,6 @@ HANGMAN_PICS = ['''
 /|\  |
 / \  |
      |
-    ===''', '''
+    ===''']
 
-]
+words = 'ant baboon'.split()
