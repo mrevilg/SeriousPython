@@ -39,4 +39,7 @@ HANGMAN_PICS = ['''
      |
     ===''']
 
-words = 'ant baboon bat bear beaver camel cat clam'.split()
+words = """ant baboon bat bear beaver camel cat clam cobra cougar 
+coyote crow deer dog donkey duck eagle ferret""".split()
+
+def getRandomWord(wordList):
