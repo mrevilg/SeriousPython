@@ -67,3 +67,6 @@ def displayBoard(missedLetters, correctLetters, secretWord):
    for letter in blanks:
       print(letter, end=' ')
    print()
+
+def getGuess(alreadyGuessed):
+   while True:
