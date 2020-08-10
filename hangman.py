@@ -75,11 +75,13 @@ def getGuess(alreadyGuessed):
       guess = guess.lower()
       if len(guess) != 1:
          print('Please enter a sinlge letter.')
-         elif guess in alreadyGuessed:
-            print('You have already guessed that letter. Choose again.')
-         elif guess not in 'abcdefghijklmonpqrstuvwxyz':
-            print('Please enter a LETTER.')
-         else:
-            return guess
+      elif guess in alreadyGuessed:
+         print('You have already guessed that letter. Choose again.')
+      elif guess not in 'abcdefghijklmonpqrstuvwxyz':
+         print('Please enter a LETTER.')
+      else:
+         return guess
 
 def playAgain():
+   print('Do you want to play? (yes or no)')
+   return input().lower().startswith('y')
