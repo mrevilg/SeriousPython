@@ -85,3 +85,10 @@ def getGuess(alreadyGuessed):
 def playAgain():
    print('Do you want to play? (yes or no)')
    return input().lower().startswith('y')
+
+
+print('H A N G M A N')
+missedLetters = ''
+correctLetters = ''
+secretWord = getRandomWord(words)
+gameIsDone = False
