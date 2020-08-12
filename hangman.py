@@ -92,3 +92,8 @@ missedLetters = ''
 correctLetters = ''
 secretWord = getRandomWord(words)
 gameIsDone = False
+
+while True:
+   displayBoard(missedLetters, correctLetters, secretWord)
+
+   guess = getGuess(missedLetters + correctLetters)
