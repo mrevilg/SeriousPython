@@ -102,3 +102,13 @@ while True:
       correctLetters = correctLetters + guess
 
       foundAllLetters = True
+      for i in range(len(secretWord)):
+         if secretWord[i] not in correctLetters:
+            foundAllLetters = False
+            break
+      if foundAllLetters:
+         print('Yes! The secret word is "' + secretWord + '"! You won!')
+         gameIsDone = True
+   
+   else:
+      missedLetters = missedLetters + guess
