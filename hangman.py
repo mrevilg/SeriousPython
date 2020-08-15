@@ -112,3 +112,19 @@ while True:
    
    else:
       missedLetters = missedLetters + guess
+
+      if len(missedLetters) == len(HANGMAN_PICS) - 1:
+         displayBoard(missedLetters, correctLetters, secretWord)
+         print('You have run out of guesses!\nAfter ' + 
+            str(len(missedLetters)) + ' missed guesses and ' + 
+            str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
+         gameIsDone = True
+
+   if gameIsDone:
+      if playAgain():
+         missedLetters = ''
+         correctLetters = ''
+         gameIsDone = False
+         secretWord = getRandomWord(words)
+      else:
+         break
