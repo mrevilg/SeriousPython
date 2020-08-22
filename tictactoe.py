@@ -25,3 +25,8 @@ def whoGoesFirst():
         return 'computer'
     else:
         return 'player'
+
+def makeMove(board, letter, move):
+    board[move] = letter
+
+def isWinner(bo, le): # bo is board, le is letter
