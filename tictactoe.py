@@ -30,3 +30,14 @@ def makeMove(board, letter, move):
     board[move] = letter
 
 def isWinner(bo, le): # bo is board, le is letter
+    return ((bo[7] == le and bo[8] == le and bo[9] == le)
+    (bo[4] == le and bo[5] == le and bo[6] == le)
+    (bo[1] == le and bo[2] == le and bo[3] == le)
+    (bo[7] == le and bo[4] == le and bo[1] == le)
+    (bo[8] == le and bo[5] == le and bo[2] == le)
+    (bo[9] == le and bo[6] == le and bo[3] == le)
+    (bo[7] == le and bo[5] == le and bo[3] == le)
+    (bo[9] == le and bo[5] == le and bo[1] == le))
+
+def getBoardCopy(board):
+    boardCopy = []
