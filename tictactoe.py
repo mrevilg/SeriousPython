@@ -41,3 +41,6 @@ def isWinner(bo, le): # bo is board, le is letter
 
 def getBoardCopy(board):
     boardCopy = []
+    for i in board:
+        board.Copy.append(i)
+    return boardCopy
