@@ -44,3 +44,6 @@ def getBoardCopy(board):
     for i in board:
         board.Copy.append(i)
     return boardCopy
+
+def isSpaceFree(board, move):
+    return board[move] == ' '
