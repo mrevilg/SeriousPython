@@ -66,3 +66,9 @@ def chooseRandomMoveFromList(board, moveList):
         return random.choice(possibleMoves)
     else:
         return None
+
+def getComputerMove(board, computerLetter):
+    if computerLetter == 'X':
+        playerLetter = 'O'
+    else:
+        playerLetter = 'X'
