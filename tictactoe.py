@@ -88,3 +88,15 @@ def getComputerMove(board, computerLetter):
         return 5
 
     return chooseRandomMoveFromList(board, [2, 4, 6, 8])
+
+def isBoardFull(board):
+    for i in range(1, 10):
+        if isSpaceFree(board, i):
+            return False
+    return True
+
+print('Welcome to Tic-Tac-Toe!')
+
+while True:
+    # Reset the board.
+    theBoard = [' '] * 10
