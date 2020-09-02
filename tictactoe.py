@@ -110,3 +110,10 @@ while True:
             drawBoard(theBoard)
             move = getPlayerMove(theBoard)
             makeMove(theBoard, playerLetter, move)
+
+            if isWinner(theBoard, playerLetter):
+                drawBoard(theBoard)
+                print('The game is a tie!')
+                break
+            else:
+                turn = 'computer'
