@@ -117,3 +117,7 @@ while True:
                 break
             else:
                 turn = 'computer'
+
+        else:
+            move = getComputerMove(theBoard, computerLetter)
+            makeMove(theBoard, computerLetter, move)
