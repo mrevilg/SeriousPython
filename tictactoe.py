@@ -30,19 +30,19 @@ def makeMove(board, letter, move):
     board[move] = letter
 
 def isWinner(bo, le): # bo is board, le is letter
-    return ((bo[7] == le and bo[8] == le and bo[9] == le)
-    (bo[4] == le and bo[5] == le and bo[6] == le)
-    (bo[1] == le and bo[2] == le and bo[3] == le)
-    (bo[7] == le and bo[4] == le and bo[1] == le)
-    (bo[8] == le and bo[5] == le and bo[2] == le)
-    (bo[9] == le and bo[6] == le and bo[3] == le)
-    (bo[7] == le and bo[5] == le and bo[3] == le)
+    return ((bo[7] == le and bo[8] == le and bo[9] == le) or
+    (bo[4] == le and bo[5] == le and bo[6] == le) or
+    (bo[1] == le and bo[2] == le and bo[3] == le) or
+    (bo[7] == le and bo[4] == le and bo[1] == le) or
+    (bo[8] == le and bo[5] == le and bo[2] == le) or
+    (bo[9] == le and bo[6] == le and bo[3] == le) or
+    (bo[7] == le and bo[5] == le and bo[3] == le) or
     (bo[9] == le and bo[5] == le and bo[1] == le))
 
 def getBoardCopy(board):
     boardCopy = []
     for i in board:
-        board.Copy.append(i)
+        boardCopy.append(i)
     return boardCopy
 
 def isSpaceFree(board, move):
@@ -50,8 +50,7 @@ def isSpaceFree(board, move):
 
 def getPlayerMove(board):
     move =  ' '
-    while move not in '1 2 3 4 5 6 7 8 9'.split() or not
-        isSpaceFree(board, int(move)):
+    while move not in '1 2 3 4 5 6 7 8 9'.split() or not isSpaceFree(board, int(move)):
             print('What is your next move? (1-9)')
             move = input()
     return int(move)
