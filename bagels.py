@@ -10,3 +10,6 @@ def getSecretNumber():
     for i in range(NUM_DIGITS):
         secretNum += str(numbers[i])
     return secretNum
+
+def getClues(guess, secretNum):
+    
