@@ -12,4 +12,5 @@ def getSecretNumber():
     return secretNum
 
 def getClues(guess, secretNum):
-    
+    if guess == secretNum:
+        return 'You got it!'
