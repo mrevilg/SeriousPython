@@ -37,4 +37,9 @@ def isOnlyDigits(num):
 
     return True
 
-print
+print('I am thinking of a %s-digit number. Try to guess what it is.' % (NUM_DIGITS))
+print('The clues I give are...')
+print('When I say:  That means:')
+print(' Bagels      None of the digits are correct.')
+print(' Pico        One digit is correct but in the wrong position')
+print(' Fermi       One digit is correct but in the right position')
