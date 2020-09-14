@@ -43,3 +43,7 @@ print('When I say:  That means:')
 print(' Bagels      None of the digits are correct.')
 print(' Pico        One digit is correct but in the wrong position')
 print(' Fermi       One digit is correct but in the right position')
+
+while True:
+    secretNum = getSecretNumber()
+    
