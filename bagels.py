@@ -50,4 +50,8 @@ while True:
 
     guessesTaken = 1
     while guessesTaken <= MAX_GUESS:
+        guess = ''
+        while len(guess) != NUM_DIGITS or not isOnlyDigits(guess):
+            print('Guess #%s: ' % (guessesTaken))
+            guess = input()
     
