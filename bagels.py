@@ -54,4 +54,7 @@ while True:
         while len(guess) != NUM_DIGITS or not isOnlyDigits(guess):
             print('Guess #%s: ' % (guessesTaken))
             guess = input()
+
+        print(getClues(guess, secretNum))
+        guessesTaken += 1
     
