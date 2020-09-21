@@ -13,3 +13,8 @@ def getNewBoard():
             else:
                 board[x].append('`')
     return board
+
+def drawBoard(board):
+    tensDigitLine = '   '
+    for i in range(1, 6):
+        tensDigitLine += (' ' * 9) + str(iS)
