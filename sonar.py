@@ -17,4 +17,8 @@ def getNewBoard():
 def drawBoard(board):
     tensDigitLine = '   '
     for i in range(1, 6):
-        tensDigitLine += (' ' * 9) + str(iS)
+        tensDigitLine += (' ' * 9) + str(i)
+
+    print(tensDigitLine)
+    print(' ' + ('0123456789' * 6))
+    print()
