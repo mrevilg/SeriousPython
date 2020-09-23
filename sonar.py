@@ -22,3 +22,9 @@ def drawBoard(board):
     print(tensDigitLine)
     print(' ' + ('0123456789' * 6))
     print()
+
+    for row in range(15):
+        if row < 10:
+            extraSpace = ' '
+        else:
+            extraSpace = ''
