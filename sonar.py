@@ -28,3 +28,7 @@ def drawBoard(board):
             extraSpace = ' '
         else:
             extraSpace = ''
+
+        boardRow = ''
+        for column in range(60):
+            boardRow += board[column][row]
