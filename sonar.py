@@ -32,3 +32,5 @@ def drawBoard(board):
         boardRow = ''
         for column in range(60):
             boardRow += board[column][row]
+
+        print('%s%s %s %s' % (extraSpace, row, boardRow, row))
