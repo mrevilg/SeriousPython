@@ -34,3 +34,9 @@ def drawBoard(board):
             boardRow += board[column][row]
 
         print('%s%s %s %s' % (extraSpace, row, boardRow, row))
+
+    print()
+    print(' ' + ('0123456789' * 6))
+    print(tensDigitLine)
+
+def getRandomChests(numChests):
