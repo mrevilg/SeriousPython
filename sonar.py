@@ -40,3 +40,4 @@ def drawBoard(board):
     print(tensDigitLine)
 
 def getRandomChests(numChests):
+    chests = []
