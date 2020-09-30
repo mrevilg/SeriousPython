@@ -42,4 +42,4 @@ def drawBoard(board):
 def getRandomChests(numChests):
     chests = []
     while len(chests) < numChests:
-        newChest = []
+        newChest = [random.randint(0, 59), random.randint(0,14)]
