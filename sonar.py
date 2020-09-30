@@ -43,3 +43,6 @@ def getRandomChests(numChests):
     chests = []
     while len(chests) < numChests:
         newChest = [random.randint(0, 59), random.randint(0,14)]
+        if newChest not in chests:
+            chests.append(newChest)
+    return chests
