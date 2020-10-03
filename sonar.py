@@ -46,3 +46,6 @@ def getRandomChests(numChests):
         if newChest not in chests:
             chests.append(newChest)
     return chests
+
+def isOnBoard(x, y):
+    return
