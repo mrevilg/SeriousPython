@@ -48,4 +48,4 @@ def getRandomChests(numChests):
     return chests
 
 def isOnBoard(x, y):
-    return
+    return x >= 0 and x <= 59 and y >= 0 and y <= 14
