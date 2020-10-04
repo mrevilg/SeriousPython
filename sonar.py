@@ -49,3 +49,8 @@ def getRandomChests(numChests):
 
 def isOnBoard(x, y):
     return x >= 0 and x <= 59 and y >= 0 and y <= 14
+
+def makeMove(board, chests, x, y):
+    smallestDistance = 100
+    for cx, cy in chests:
+        distance = math.sqrt((cx - x) * (cx - y) + (cy - y) * (cy - y))
