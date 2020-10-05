@@ -54,3 +54,12 @@ def makeMove(board, chests, x, y):
     smallestDistance = 100
     for cx, cy in chests:
         distance = math.sqrt((cx - x) * (cx - y) + (cy - y) * (cy - y))
+
+        if distance < smallestDistance:
+            smallestDistance = distance
+
+    smallestDistance = round(smallestDistance)
+
+    if smallestDistance == 0:
+        chests.remove([x, y])
+        return 'You have found a sunken treasure chest'
