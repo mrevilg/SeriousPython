@@ -62,4 +62,6 @@ def makeMove(board, chests, x, y):
 
     if smallestDistance == 0:
         chests.remove([x, y])
-        return 'You have found a sunken treasure chest'
+        return 'You have found a sunken treasure chest!'
+    else:
+        if smallestDistance < 10:
