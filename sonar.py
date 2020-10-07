@@ -65,3 +65,4 @@ def makeMove(board, chests, x, y):
         return 'You have found a sunken treasure chest!'
     else:
         if smallestDistance < 10:
+            board[x][y] = str(smallestDistance)
