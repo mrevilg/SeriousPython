@@ -66,3 +66,7 @@ def makeMove(board, chests, x, y):
     else:
         if smallestDistance < 10:
             board[x][y] = str(smallestDistance)
+            return 'Treasure detected at a distance of %s from the sonar device.' % (smallestDistance)
+
+        else:
+            board[x][y] = 'X'
