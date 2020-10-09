@@ -70,3 +70,4 @@ def makeMove(board, chests, x, y):
 
         else:
             board[x][y] = 'X'
+            return 'Sonar did not detect anything. All chests out of range.'
