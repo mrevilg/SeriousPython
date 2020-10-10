@@ -71,3 +71,11 @@ def makeMove(board, chests, x, y):
         else:
             board[x][y] = 'X'
             return 'Sonar did not detect anything. All chests out of range.'
+
+def enterPlayerMove(previousMoves):
+    print('Where do you want to sdrop the next sonar? (0-59 0-14 or quit)')
+    while True:
+        move = input()
+        if move.lower() == 'quit':
+            print('Thanks for playing!')
+            sys.exit()
