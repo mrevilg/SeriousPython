@@ -79,3 +79,17 @@ def enterPlayerMove(previousMoves):
         if move.lower() == 'quit':
             print('Thanks for playing!')
             sys.exit()
+
+        move = move.split()
+        if len(move) == 2 and move[0].isdigit() and move[1].isdigit() and isOnBoard(int(move[0]), int(move[1])):
+            if [in(move[0]), int(move[1])] in previousMoves:
+                print('You already moved there.')
+                continue
+            return [int(move[0]), int(move[1])]
+
+        print('Enter a number from 0 to 59, a space, then a number from 0 to 14.')
+
+def showInstructions():
+    print('''Instructions:
+You are the captain of the Simon, a treasure-hunting ship. Your cuttent
+    mission is to use your''') # cut paste for text...
