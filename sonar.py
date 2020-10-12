@@ -92,4 +92,5 @@ def enterPlayerMove(previousMoves):
 def showInstructions():
     print('''Instructions:
 You are the captain of the Simon, a treasure-hunting ship. Your cuttent
-    mission is to use your''') # cut paste for text...
+    mission is to use your devices to find sunken treasure chests at the bottom
+    of the ocean.''') # cut paste for text...
