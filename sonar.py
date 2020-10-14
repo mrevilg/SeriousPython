@@ -90,9 +90,21 @@ def enterPlayerMove(previousMoves):
         print('Enter a number from 0 to 59, a space, then a number from 0 to 14.')
 
 def showInstructions():
-    print('''Instructions:
-You are the captain of the Simon, a treasure-hunting ship. Your cuttent
+    print('''Instructions: You are the captain of the Simon, a treasure-hunting ship. Your cuttent
     mission is to use your devices to find sunken treasure chests at the bottom
     of the ocean. But, you only have a sonar that indicates distance, not direction!
     
-    Enter the coordinates to drop a sonar device, and it will mark the map.''') # cut paste for text...
+    Enter the coordinates to drop a sonar device, and it will mark the map. An X indicates the chest
+    is beyond the sonar range, a number indictaes how many spaces away the chest is, and a C marks
+    the chest itself
+    
+    Press enter to continue...''')
+        input()
+
+    print('''When you drop directly on a chest, you retrieve it, and the remaing sonars update.''')
+
+    print('Press enter to continue...')
+        input()
+
+    print('S O N A R !') 
+    print() 
