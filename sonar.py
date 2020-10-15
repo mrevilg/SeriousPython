@@ -99,12 +99,12 @@ def showInstructions():
     the chest itself
     
     Press enter to continue...''')
-        input()
+    input()
 
     print('''When you drop directly on a chest, you retrieve it, and the remaing sonars update.''')
 
     print('Press enter to continue...')
-        input()
+    input()
 
 print('S O N A R !') 
 print() 
