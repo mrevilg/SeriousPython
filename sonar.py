@@ -106,5 +106,13 @@ def showInstructions():
     print('Press enter to continue...')
         input()
 
-    print('S O N A R !') 
-    print() 
+print('S O N A R !') 
+print() 
+print('Would you like to view the instructions? (yes/no)')
+if input().lower().startswith('y'):
+    showInstructions()
+
+while True:
+    # Game loop
+     
+
