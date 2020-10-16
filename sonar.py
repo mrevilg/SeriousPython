@@ -114,5 +114,9 @@ if input().lower().startswith('y'):
 
 while True:
     # Game loop
-     
+    sonarDevices = 20
+    theBoard = getNewBoard()
+    theChests = getRandomChests(3)
+    drawBoard(theBoard)
+    previousMoves = []
 
