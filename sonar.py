@@ -120,3 +120,11 @@ while True:
     drawBoard(theBoard)
     previousMoves = []
 
+    while sonarDevices > 0:
+        print('You have %s sonar device(s) left. %s treasure chest(s) remaining.' % (sonarDevices, len(theChests)))
+
+        x, y = enterPlayerMove(previousMoves)
+        previousMoves.append([x, y])
+
+        moveResult = makeMove(theBoard, theChests, x, y)
+
