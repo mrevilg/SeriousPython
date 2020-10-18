@@ -137,4 +137,9 @@ while True:
             print(moveResult)
         
         if len(theChests) == 0:
+            print('You have found all the sunken treasure! Congrats Good Game!')
+            break
 
+        sonarDevices -= 1
+
+    if sonarDevices == 0:
