@@ -127,4 +127,14 @@ while True:
         previousMoves.append([x, y])
 
         moveResult = makeMove(theBoard, theChests, x, y)
+        if moveResult == False:
+            continue
+        else:
+            if moveResult == 'You have found a sunken treasure chest!':
+                for x, y in previousMoves:
+                    makeMove(theBoard, theChests, x, y)
+            drawBoard(theBoard)
+            print(moveResult)
+        
+        if len(theChests) == 0:
 
