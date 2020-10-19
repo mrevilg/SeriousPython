@@ -143,3 +143,11 @@ while True:
         sonarDevices -= 1
 
     if sonarDevices == 0:
+        print('No more devices! Heading home with the treasure found so far! Good Game!')
+        print(' The remaining chests were here:')
+        for x, y in theChests:
+            print(' %s, %s' % (x, y))
+        
+        print('Do you want to play again? (yes/no)')
+        if not input().lower().startswith('y'):
+            sys.exit
