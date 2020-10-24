@@ -8,4 +8,5 @@ def drawBoard(board):
     print(' 123456789')
     print(' +--------+')
     for y in range(HEIGHT):
-        print('')
+        print('%s|' % (y+1), end='')
+        for x in range(WIDTH):
