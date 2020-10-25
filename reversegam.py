@@ -19,3 +19,15 @@ def getNewBoard():
     board = []
     for i in range(WIDTH):
         board.append([' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '])
+    return board
+
+def isValidMove(board, tile, xstart, ystart):
+    if board[xstart][ystart] != ' ' or not isOnBoard(xstart, ystart):
+        return False
+
+    if tile == 'X':
+        otherTile = 'O'
+    else:
+        otherTile = 'X'
+
+    tilesToFlip = []
