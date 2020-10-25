@@ -16,3 +16,6 @@ def drawBoard(board):
     print(' 123456789')
 
 def getNewBoard():
+    board = []
+    for i in range(WIDTH):
+        board.append([' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '])
