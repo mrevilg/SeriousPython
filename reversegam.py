@@ -31,3 +31,17 @@ def isValidMove(board, tile, xstart, ystart):
         otherTile = 'X'
 
     tilesToFlip = []
+    for xdirection, ydirection in [[0, 1], [1, 1], [1, 0], [1, -1], [0, -1], [-1, -1], [-1, 0], [-1, 1]]:
+        x, y = xstart, ystart
+        x += xdirection
+        y += ydirection
+        while isOnBoard(x, y) and board[x][y] == otherTile:
+            x += xdirection
+            y += ydirection
+            if isOnBoard(x, y) and board[x][y] == tile:
+                while True:
+                    x -= xdirection
+                    y -= ydirection
+                    if x == xstart and y == ystart:
+                        break
+                    tilesToFlip.append([x, y])
