@@ -51,4 +51,9 @@ def isValidMove(board, tile, xstart, ystart):
     return tilesToFlip
 
 def isOnBoard(x, y):
-    return x >= 0 and x = <= WIDTH - 1 and y >= 0 and y <= HEIGHT - 1 
+    return x >= 0 and x <= WIDTH - 1 and y >= 0 and y <= HEIGHT - 1 
+
+def getBoardWithValidMoves(board, tile):
+    boardCopy = getBoardCopy(board)
+
+    
