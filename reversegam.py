@@ -45,3 +45,10 @@ def isValidMove(board, tile, xstart, ystart):
                     if x == xstart and y == ystart:
                         break
                     tilesToFlip.append([x, y])
+    
+    if len(tilesToFlip) == 0:
+        return False
+    return tilesToFlip
+
+def isOnBoard(x, y):
+    return x >= 0 and x = <= WIDTH - 1 and y >= 0 and y <= HEIGHT - 1 
