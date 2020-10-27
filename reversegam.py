@@ -60,4 +60,7 @@ def getBoardWithValidMoves(board, tile):
         boardCopy[x][y] = '.'
     return boardCopy
 
+def getValidMoves(board, tile):
+    validMoves = []
+
     
