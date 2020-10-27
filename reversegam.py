@@ -56,4 +56,8 @@ def isOnBoard(x, y):
 def getBoardWithValidMoves(board, tile):
     boardCopy = getBoardCopy(board)
 
+    for x, y in getValidMoves(boardCopy, tile):
+        boardCopy[x][y] = '.'
+    return boardCopy
+
     
