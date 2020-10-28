@@ -68,6 +68,10 @@ def getValidMoves(board, tile):
                 validMoves.append([x, y])
     return validMoves
 
-
+def getScoreOfBoard(board):
+    xscore = 0
+    oscore = 0
+    for x in range(WIDTH):
+        for y in range(HEIGHT):
 
     
