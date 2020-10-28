@@ -62,5 +62,12 @@ def getBoardWithValidMoves(board, tile):
 
 def getValidMoves(board, tile):
     validMoves = []
+    for x in range(WIDTH):
+        for y in range(HEIGHT):
+            if isValidMove(b, tile, x, y) != False:
+                validMoves.append([x, y])
+    return validMoves
+
+
 
     
