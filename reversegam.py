@@ -79,4 +79,5 @@ def getScoreOfBoard(board):
                 oscore += 1
     return {'X':xscore, 'O':oscore}
 
-    
+def enterPlayerTile():
+    tile = ''
