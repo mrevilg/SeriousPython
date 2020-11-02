@@ -81,3 +81,6 @@ def getScoreOfBoard(board):
 
 def enterPlayerTile():
     tile = ''
+    while not (tile == 'X' or tile == 'O'):
+        print('Do you want to be X or O?')
+        tile = input().upper()
