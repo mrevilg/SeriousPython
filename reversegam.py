@@ -84,3 +84,10 @@ def enterPlayerTile():
     while not (tile == 'X' or tile == 'O'):
         print('Do you want to be X or O?')
         tile = input().upper()
+
+    if tile == 'X':
+        return ['X', 'O']
+    else:
+        return ['O', 'X']
+
+def whoGoesFirst():
