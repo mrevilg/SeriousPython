@@ -95,3 +95,9 @@ def whoGoesFirst():
         return 'computer'
     else:
         return 'player'
+
+def makeMove(board, tile, xstart, ystart):
+    tilesToFlip = isValidMove(board, tile, xstart, ystart)
+
+    if tilesToFlip == False:
+        return False
