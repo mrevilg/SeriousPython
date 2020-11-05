@@ -107,4 +107,10 @@ def makeMove(board, tile, xstart, ystart):
         board[x][y] = tile
     return True
 
-    
+def getBoardCopy(board):
+    boardCopy = getNewBoard()
+    for x in range(WIDTH):
+        for y in range(HEIGHT):
+            boardCopy[x][y] = board[x][y]
+
+    return boardCopy
