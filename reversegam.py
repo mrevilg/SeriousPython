@@ -101,3 +101,10 @@ def makeMove(board, tile, xstart, ystart):
 
     if tilesToFlip == False:
         return False
+
+    board[xstart][ystart] = tile
+    for x, y in tilesToFlip:
+        board[x][y] = tile
+    return True
+
+    
