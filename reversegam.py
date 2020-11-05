@@ -114,3 +114,5 @@ def getBoardCopy(board):
             boardCopy[x][y] = board[x][y]
 
     return boardCopy
+
+def isOnCorner(x, y):
