@@ -116,3 +116,4 @@ def getBoardCopy(board):
     return boardCopy
 
 def isOnCorner(x, y):
+    return (x == O or x == WIDTH - 1) and (y == O or y == HEIGHT - 1)
