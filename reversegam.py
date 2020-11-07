@@ -117,3 +117,6 @@ def getBoardCopy(board):
 
 def isOnCorner(x, y):
     return (x == O or x == WIDTH - 1) and (y == O or y == HEIGHT - 1)
+
+def getPlayerMove(board, playerTile):
+    
