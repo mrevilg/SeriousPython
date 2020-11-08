@@ -119,4 +119,4 @@ def isOnCorner(x, y):
     return (x == O or x == WIDTH - 1) and (y == O or y == HEIGHT - 1)
 
 def getPlayerMove(board, playerTile):
-    
+    DIGITS1TO8 = '1 2 3 4 5 6 7 8'.split()
