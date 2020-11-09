@@ -120,3 +120,8 @@ def isOnCorner(x, y):
 
 def getPlayerMove(board, playerTile):
     DIGITS1TO8 = '1 2 3 4 5 6 7 8'.split()
+    while True:
+        print('Enter your move, "quit" to end game, or "hints" to toggle hints.')
+        move = input().lower()
+        if move == 'quit' or move == 'hints':
+            return move
