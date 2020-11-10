@@ -125,3 +125,14 @@ def getPlayerMove(board, playerTile):
         move = input().lower()
         if move == 'quit' or move == 'hints':
             return move
+
+        if len(move) == 2 and move[0] in DIGITS1TO8 and move[1] in DIGITS1TO8:
+            x = int(move[0]) - 1
+            y = int(move[1]) - 1
+            if isValidMove(board, playerTile, x, y) == False:
+                continue
+            else:
+                break
+        else:
+            print('')
+            print('')
