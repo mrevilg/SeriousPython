@@ -134,5 +134,5 @@ def getPlayerMove(board, playerTile):
             else:
                 break
         else:
-            print('')
-            print('')
+            print('That is not a valid move. Enter the column 1-8 and row 1-8.')
+            print('For example 81 will be the top-right corner')
