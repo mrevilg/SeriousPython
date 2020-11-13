@@ -140,3 +140,9 @@ def getPlayerMove(board, playerTile):
     return [x, y]
 
 def getComputerMove(board, computerTile):
+    possibleMoves = getValidMoves(board, computerTile)
+    random.shuffle(possibleMoves)
+
+    for x, y in possibleMoves:
+        if isOnCorner(x, y):
+            return [x, y]
