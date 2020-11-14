@@ -146,3 +146,13 @@ def getComputerMove(board, computerTile):
     for x, y in possibleMoves:
         if isOnCorner(x, y):
             return [x, y]
+
+    bestScore = -1
+    for x, y in possibleMoves:
+        boardCopy = getBoardCopy(board)
+        makeMove(boardCopy, computerTile, x, y)
+        score = getScoreOfBoard(boardCopy)[computerTile]
+        if score > bestScore:
+            bestMove = [x, y]
+            bestScore = score
+    return bestMove
