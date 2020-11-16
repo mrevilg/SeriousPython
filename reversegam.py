@@ -156,3 +156,5 @@ def getComputerMove(board, computerTile):
             bestMove = [x, y]
             bestScore = score
     return bestMove
+
+def printScore(board, playerTile, computerTile):
