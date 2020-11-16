@@ -159,3 +159,6 @@ def getComputerMove(board, computerTile):
 
 def printScore(board, playerTile, computerTile):
     scores = getScoreOfBoard(board)
+    print('You: %s points. Computer: %s points.' % (scores[playerTile], scores[computerTile]))
+
+def playGame(playTile, computerTile):
