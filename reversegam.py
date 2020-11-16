@@ -158,3 +158,4 @@ def getComputerMove(board, computerTile):
     return bestMove
 
 def printScore(board, playerTile, computerTile):
+    scores = getScoreOfBoard(board)
