@@ -162,3 +162,6 @@ def printScore(board, playerTile, computerTile):
     print('You: %s points. Computer: %s points.' % (scores[playerTile], scores[computerTile]))
 
 def playGame(playTile, computerTile):
+    showHints = False
+    turn = whoGoesFirst()
+    print('The ' + turn + ' will go first.')
