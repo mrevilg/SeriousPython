@@ -165,3 +165,10 @@ def playGame(playTile, computerTile):
     showHints = False
     turn = whoGoesFirst()
     print('The ' + turn + ' will go first.')
+
+    # clear the board
+    board = getNewBoard()
+    board[3][3] ='X'
+    board[3][4] ='O'
+    board[4][3] ='O'
+    board[4][4] ='X'
