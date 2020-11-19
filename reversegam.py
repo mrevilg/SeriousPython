@@ -161,7 +161,7 @@ def printScore(board, playerTile, computerTile):
     scores = getScoreOfBoard(board)
     print('You: %s points. Computer: %s points.' % (scores[playerTile], scores[computerTile]))
 
-def playGame(playTile, computerTile):
+def playGame(playerTile, computerTile):
     showHints = False
     turn = whoGoesFirst()
     print('The ' + turn + ' will go first.')
@@ -172,3 +172,7 @@ def playGame(playTile, computerTile):
     board[3][4] ='O'
     board[4][3] ='O'
     board[4][4] ='X'
+
+    while True:
+        playerValidMoves = getValidMoves(board, playerTile)
+        computerValidMoves = getValidMoves(board, computerTile)
