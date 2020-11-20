@@ -176,3 +176,8 @@ def playGame(playerTile, computerTile):
     while True:
         playerValidMoves = getValidMoves(board, playerTile)
         computerValidMoves = getValidMoves(board, computerTile)
+
+        if playerValidMoves == [] and computerValidMoves == []:
+            return board
+
+        elif turn == 'player':
