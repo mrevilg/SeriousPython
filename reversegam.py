@@ -183,3 +183,5 @@ def playGame(playerTile, computerTile):
         elif turn == 'player':
             if playerValidMoves != []:
                 if showHints:
+                    vaildMovesBoard = getBoardWithValidMoves(board, playerTile)
+                    drawBoard(vaildMovesBoard)
