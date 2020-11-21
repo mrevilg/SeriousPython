@@ -185,3 +185,6 @@ def playGame(playerTile, computerTile):
                 if showHints:
                     vaildMovesBoard = getBoardWithValidMoves(board, playerTile)
                     drawBoard(vaildMovesBoard)
+                else:
+                    drawBoard(board)
+                printScore(board, playerTile, computerTile)
