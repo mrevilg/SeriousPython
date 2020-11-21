@@ -181,3 +181,5 @@ def playGame(playerTile, computerTile):
             return board
 
         elif turn == 'player':
+            if playerValidMoves != []:
+                if showHints:
