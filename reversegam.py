@@ -197,3 +197,8 @@ def playGame(playerTile, computerTile):
                     showHints = not showHints
                     continue
                 else:
+                    makeMove(board, playerTile, move[0], move[1])
+            turn = 'computer'
+
+        elif turn == 'computer':
+            if computerValidMoves != []:
