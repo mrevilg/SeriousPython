@@ -188,3 +188,12 @@ def playGame(playerTile, computerTile):
                 else:
                     drawBoard(board)
                 printScore(board, playerTile, computerTile)
+
+                move = getPlayerMove(board, playerTile)
+                if move == 'quit':
+                    print('Thanks for playing!')
+                    sys.exit()
+                elif move == 'hints':
+                    showHints = not showHints
+                    continue
+                else:
