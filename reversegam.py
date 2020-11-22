@@ -204,3 +204,10 @@ def playGame(playerTile, computerTile):
             if computerValidMoves != []:
                 drawBoard(board)
                 printScore(board, playerTile, computerTile)
+
+                input('Press Enter to see the computer\'s move')
+                move = getComputerMove(board, computerTile)
+                makeMove(board, computerTile, move[0], move[1])
+            turn = 'player'
+
+print('Welcome to Reversegam!!')
