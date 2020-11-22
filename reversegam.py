@@ -202,3 +202,5 @@ def playGame(playerTile, computerTile):
 
         elif turn == 'computer':
             if computerValidMoves != []:
+                drawBoard(board)
+                printScore(board, playerTile, computerTile)
