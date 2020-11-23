@@ -211,3 +211,12 @@ def playGame(playerTile, computerTile):
             turn = 'player'
 
 print('Welcome to Reversegam!!')
+
+playerTile, computerTile = enterPlayerTile()
+
+while True:
+    finalBoard = playGame(playerTile, computerTile)
+
+    # Display final score.
+    drawBoard(finalBoard)
+    scores = getScoreOfBoard(finalBoard)
