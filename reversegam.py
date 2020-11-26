@@ -5,7 +5,7 @@ WIDTH = 8
 HEIGHT = 8
 
 def drawBoard(board):
-    print(' 123456789')
+    print('  12345678')
     print(' +--------+')
     for y in range(HEIGHT):
         print('%s|' % (y+1), end='')
@@ -13,7 +13,7 @@ def drawBoard(board):
             print(board[x][y], end='')
         print('%s|' % (y+1))
     print(' +--------+')    
-    print(' 123456789')
+    print('  12345678')
 
 def getNewBoard():
     board = []
@@ -64,7 +64,7 @@ def getValidMoves(board, tile):
     validMoves = []
     for x in range(WIDTH):
         for y in range(HEIGHT):
-            if isValidMove(b, tile, x, y) != False:
+            if isValidMove(board, tile, x, y) != False:
                 validMoves.append([x, y])
     return validMoves
 
@@ -116,7 +116,7 @@ def getBoardCopy(board):
     return boardCopy
 
 def isOnCorner(x, y):
-    return (x == O or x == WIDTH - 1) and (y == O or y == HEIGHT - 1)
+    return (x == 0 or x == WIDTH - 1) and (y == 0 or y == HEIGHT - 1)
 
 def getPlayerMove(board, playerTile):
     DIGITS1TO8 = '1 2 3 4 5 6 7 8'.split()
